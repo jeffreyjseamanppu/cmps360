@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CMPS 360 | Module 1: Java Programming</title><style>
+:root{--navy:#17324d;--blue:#176a9c;--light:#eff6fa;--line:#d6e2e9;--ink:#243445}*{box-sizing:border-box}body{margin:0;background:#f5f7fa;color:var(--ink);font:16px/1.65 Arial,Helvetica,sans-serif}.wrap{max-width:1000px;margin:auto;background:white;min-height:100vh}.hero{background:var(--navy);color:white;padding:42px 45px}.hero h1{margin:0;font-size:2.1rem;line-height:1.2}.hero p{margin:12px 0 0;color:#d9e8f3}.content{padding:30px 45px 55px}h2{color:var(--navy);border-bottom:2px solid var(--line);padding-bottom:9px;margin-top:40px}h3{color:var(--blue);margin-top:25px}h4{margin-bottom:5px}a{color:#075c92}a:hover{text-decoration:none}.note{padding:17px 20px;background:var(--light);border-left:5px solid var(--blue);margin:18px 0}.card{border:1px solid var(--line);border-radius:9px;padding:20px;margin:18px 0}.pill{display:inline-block;background:#e5f0f6;color:var(--navy);padding:4px 12px;border-radius:30px;font-weight:bold;font-size:.88rem}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.grid .card{margin:0}pre{background:#152535;color:#f4f8fb;padding:18px;overflow-x:auto;border-radius:7px;font-size:.9rem;line-height:1.5}code{font-family:Consolas,Monaco,monospace}table{border-collapse:collapse;width:100%;margin:15px 0 20px}th,td{padding:10px 12px;border:1px solid var(--line);text-align:left}th{background:#eaf2f7;color:var(--navy)}td:last-child,th:last-child{text-align:right}li{margin:5px 0}.step{border-left:3px solid #bdd5e4;padding-left:17px;margin:18px 0}.resource{margin:10px 0;padding:12px 15px;border:1px solid var(--line);border-radius:6px}.resource strong{display:block}.small{font-size:.9rem;color:#536579}.checklist label{display:block;padding:5px 0}.footer{margin-top:45px;border-top:1px solid var(--line);padding-top:18px;color:#536579;font-size:.9rem}@media(max-width:650px){.hero{padding:28px 22px}.content{padding:20px}.grid{grid-template-columns:1fr}.hero h1{font-size:1.7rem}}@media print{body{background:white}.wrap{max-width:none}.hero{print-color-adjust:exact}pre{white-space:pre-wrap}h2,h3{break-after:avoid}.card,table{break-inside:avoid}}
+</style></head><body><div class="wrap"><header class="hero"><div>POINT PARK UNIVERSITY · CMPS 360</div><h1>Module 1: Introduction to Java Programming</h1><p>Survey of Programming Languages · Weeks 1–2 · Professor Jeff Seaman</p></header><main class="content">
+<section><h2>Module Overview</h2><p>Java is the first programming language in this course. Over two weeks, you will explore programming concepts, write and run Java programs in Visual Studio Code (VS Code), and use GitHub to submit your work. You will learn how Java source code is compiled into bytecode and executed by the Java Virtual Machine (JVM).</p><div class="grid"><div class="card"><strong>Assignment 1</strong><br>Java Fundamentals &amp; Console Programming<br><span class="pill">50 points</span></div><div class="card"><strong>Assignment 2</strong><br>Object-Oriented Java &amp; GUI<br><span class="pill">50 points</span></div><div class="card"><strong>Discussion</strong><br>Procedural vs. Object-Oriented Programming<br><span class="pill">50 points</span></div></div><p><strong>Total available: 150 points.</strong></p></section>
+<section><h2>Learning Objectives</h2><ol><li>Define programming terminology, including source code, compiler, interpreter, variables, methods, classes, and objects.</li><li>Compare procedural and object-oriented programming.</li><li>Describe Java features, bytecode, and the JVM.</li><li>Install and configure Java and VS Code.</li><li>Create, compile, run, and debug Java programs.</li><li>Produce console output and graphical output with <code>JOptionPane</code>.</li><li>Use classes, objects, attributes, methods, and encapsulation.</li><li>Publish and update source code in a GitHub repository.</li></ol></section>
+<section><h2>Lecture: Module 1</h2><div class="note"><strong>Required lecture:</strong> CMPS360 – Module 1 (Professor Jeff Seaman). Review the instructor-provided PowerPoint in the course LMS before beginning your assignments. The lecture covers programming terminology; procedural and object-oriented programming; classes, objects, methods, encapsulation, inheritance and polymorphism; Java features and the JVM; class syntax and identifiers; compiling; console output; and GUI dialog boxes.</div><p>The learning experience below extends the lecture with hands-on VS Code setup, GitHub workflow, and graded practice.</p></section>
+<section><h2>Learning Resources</h2><div class="resource"><strong>Java in Visual Studio Code</strong> <a href="https://code.visualstudio.com/docs/java/java-tutorial" target="_blank" rel="noopener">Official VS Code Java tutorial</a> — setup, execution, and debugging.</div><div class="resource"><strong>Java Fundamentals</strong> <a href="https://dev.java/learn/" target="_blank" rel="noopener">Dev.java Learn</a> — language syntax, classes, objects, and methods.</div><div class="resource"><strong>GitHub Basics</strong> <a href="https://docs.github.com/en/get-started/start-your-journey/hello-world" target="_blank" rel="noopener">GitHub Hello World</a> — repositories, commits, and version control.</div><h3>Recommended Videos</h3><ul><li><a href="https://www.youtube.com/results?search_query=freeCodeCamp+Java+programming+beginners" target="_blank" rel="noopener">freeCodeCamp: Java Programming for Beginners</a></li><li><a href="https://www.youtube.com/results?search_query=Visual+Studio+Code+Java+Microsoft+tutorial" target="_blank" rel="noopener">Microsoft: Java in Visual Studio Code</a></li><li><a href="https://www.youtube.com/results?search_query=freeCodeCamp+Git+GitHub+beginners" target="_blank" rel="noopener">freeCodeCamp: Git and GitHub for Beginners</a></li></ul><p class="small">Video links open searches for the named instructional videos.</p></section>
+<section><h2>Guided Learning Experience: Java, VS Code &amp; GitHub</h2><p><strong>Estimated time:</strong> 60–90 minutes. Complete this lab before Assignment 1.</p><h3>Part A: Install the Development Tools</h3><div class="step"><strong>Step 1 — Install VS Code.</strong> Download and install <a href="https://code.visualstudio.com/download" target="_blank" rel="noopener">Visual Studio Code</a> for your operating system.</div><div class="step"><strong>Step 2 — Install the Java Development Kit.</strong> Install <a href="https://adoptium.net/" target="_blank" rel="noopener">Eclipse Temurin JDK 25 LTS</a> or the JDK version approved by your instructor.</div><div class="step"><strong>Step 3 — Install Java extensions.</strong> Open VS Code → Extensions. Search for and install <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack" target="_blank" rel="noopener">Extension Pack for Java</a> by Microsoft.</div><h3>Part B: Verify Installation</h3><p>In VS Code, select <strong>Terminal → New Terminal</strong> and run:</p><pre><code>java -version
+javac -version</code></pre><p>Both commands should return version information. If a command is not recognized, check the JDK installation, environment path, and restart VS Code.</p><h3>Part C: Create Your First Program</h3><p>Create and open a folder named <code>CMPS360-Java-Module1</code>. Add a file named <code>HelloWorld.java</code>:</p><pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, CMPS 360!");
+        System.out.println("Welcome to Java Programming.");
+    }
+}</code></pre><p>Use VS Code's <strong>Run</strong> action or execute:</p><pre><code>javac HelloWorld.java
+java HelloWorld</code></pre><p><strong>Expected output:</strong></p><pre><code>Hello, CMPS 360!
+Welcome to Java Programming.</code></pre><h3>Part D: Explain the Code</h3><ul><li><code>public class HelloWorld</code> declares the class.</li><li><code>main()</code> is the program entry point.</li><li><code>System.out.println()</code> prints to the console.</li><li><code>javac</code> compiles Java source into bytecode.</li><li><code>java</code> runs the compiled program using the JVM.</li></ul><h3>Part E: Push Code to GitHub</h3><ol><li>Create an account at <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> and install <a href="https://git-scm.com/downloads" target="_blank" rel="noopener">Git</a>.</li><li>Confirm Git is available by running <code>git --version</code>.</li><li>Create a new, empty repository named <code>CMPS360-Java-Module1</code>. Do not initialize it with a README or .gitignore on GitHub.</li><li>In your local project folder, create a <code>.gitignore</code> file to exclude compiled files and generated folders:</li></ol><pre><code>*.class
+bin/
+out/
+.vscode/</code></pre><p>Then run the following commands, replacing <code>YOUR_USERNAME</code> with your own GitHub username:</p><pre><code>git init
+git branch -M main
+git add .
+git commit -m "Initial Java application"
+git remote add origin https://github.com/YOUR_USERNAME/CMPS360-Java-Module1.git
+git push -u origin main</code></pre><p>Visit the GitHub repository in a browser and verify your source code appears. Make a change, then push the update:</p><pre><code>git add .
+git commit -m "Updated Java application"
+git push</code></pre><p class="small">GitHub may prompt you to authenticate. Your GitHub account password is not used directly as a Git command-line password.</p><div class="card checklist"><strong>Lab Completion Checklist</strong><label><input type="checkbox"> JDK installed and verified</label><label><input type="checkbox"> VS Code and Java Extension Pack installed</label><label><input type="checkbox"> HelloWorld.java compiles and runs</label><label><input type="checkbox"> Git installed and repository created</label><label><input type="checkbox"> Java code successfully pushed to GitHub</label></div></section>
+<section><h2>Assignment 1: Java Fundamentals and Console Programming</h2><span class="pill">50 points · Week 1 · Individual</span><p><strong>Scenario:</strong> Build a Student Information and Grade Calculator in Java using VS Code.</p><h3>Requirements</h3><ol><li>Create a class named <code>StudentGradeCalculator</code>.</li><li>Display the student's name, major, and course name.</li><li>Declare three numeric variables representing assignment grades.</li><li>Calculate the average of the three grades.</li><li>Use an <code>if/else</code> statement to determine whether the student passed (average ≥ 70).</li><li>Display results with <code>System.out.println()</code>.</li><li>Include explanatory code comments.</li><li>Run and test the application.</li><li>Push the source code to GitHub.</li></ol><h3>Example Program</h3><pre><code>public class StudentGradeCalculator {
+    public static void main(String[] args) {
+        String studentName = "Jane Smith";
+        String major = "Computer Science";
+        String course = "CMPS 360";
+
+        double grade1 = 85;
+        double grade2 = 92;
+        double grade3 = 88;
+
+        double average = (grade1 + grade2 + grade3) / 3;
+
+        System.out.println("Student: " + studentName);
+        System.out.println("Major: " + major);
+        System.out.println("Course: " + course);
+        System.out.println("Average: " + average);
+
+        if (average >= 70) {
+            System.out.println("Status: Passed");
+        } else {
+            System.out.println("Status: Failed");
+        }
+    }
+}</code></pre><p><strong>Important:</strong> Use the example as a reference, but create your own application with different student information and grades.</p><h3>Submission Requirements</h3><ul><li>GitHub URL containing <code>StudentGradeCalculator.java</code>.</li><li>Screenshot of the program running in VS Code.</li><li><code>README.md</code> describing how to run the program.</li><li>100–150-word reflection explaining Java source code versus bytecode.</li></ul><h3>Grading Rubric</h3><table><thead><tr><th>Criterion</th><th>Points</th></tr></thead><tbody><tr><td>Correct Java class structure and syntax</td><td>10</td></tr><tr><td>Appropriate variables and data types</td><td>10</td></tr><tr><td>Accurate average calculation and conditional logic</td><td>10</td></tr><tr><td>Console output and readability</td><td>10</td></tr><tr><td>GitHub submission, README, and reflection</td><td>10</td></tr><tr><th>Total</th><th>50</th></tr></tbody></table></section>
+<section><h2>Assignment 2: Object-Oriented Java Application and GUI</h2><span class="pill">50 points · Week 2 · Individual</span><p><strong>Scenario:</strong> Develop a simple inventory application for a retail business. Store product information, calculate inventory value, and display results in the console and a dialog box.</p><h3>Requirements</h3><ol><li>Create a class named <code>Product</code>.</li><li>Define at least three private attributes: name, price, and quantity.</li><li>Use a constructor to initialize the attributes.</li><li>Implement <code>calculateInventoryValue()</code> to multiply price by quantity.</li><li>Create a separate <code>InventoryApp</code> class with <code>main()</code>.</li><li>Instantiate at least two <code>Product</code> objects.</li><li>Display each product's details and calculated inventory value in the console.</li><li>Use <code>JOptionPane.showMessageDialog()</code> to display a graphical summary.</li><li>Use comments and consistent indentation.</li><li>Push the completed application to GitHub.</li></ol><h3>Example: Product.java</h3><pre><code>public class Product {
+    private String name;
+    private double price;
+    private int quantity;
+
+    public Product(String name, double price, int quantity) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
+    public double calculateInventoryValue() {
+        return price * quantity;
+    }
+
+    public String getName() {
+        return name;
+    }
+}</code></pre><h3>Example: InventoryApp.java</h3><pre><code>import javax.swing.JOptionPane;
+
+public class InventoryApp {
+    public static void main(String[] args) {
+        Product product1 = new Product("Laptop", 899.99, 5);
+        Product product2 = new Product("Mouse", 25.99, 10);
+
+        double total =
+            product1.calculateInventoryValue() +
+            product2.calculateInventoryValue();
+
+        System.out.println("Inventory Value: $" + total);
+
+        JOptionPane.showMessageDialog(
+            null,
+            "Total Inventory Value: $" +
+            String.format("%.2f", total)
+        );
+    }
+}</code></pre><p><strong>Extend the example:</strong> Display each product's name and individual inventory value in the console and GUI summary. The example above is a starting point, not the entire solution.</p><h3>Submission Requirements</h3><ul><li>GitHub URL containing <code>Product.java</code>, <code>InventoryApp.java</code>, and a README.</li><li>Screenshots of console output and the GUI dialog.</li><li>A 150-word explanation: How do classes, objects, attributes, and methods work together in your application?</li></ul><h3>Grading Rubric</h3><table><thead><tr><th>Criterion</th><th>Points</th></tr></thead><tbody><tr><td>Product class and encapsulated attributes</td><td>10</td></tr><tr><td>Constructor and methods</td><td>10</td></tr><tr><td>Object creation and inventory calculations</td><td>10</td></tr><tr><td>Console and graphical output</td><td>10</td></tr><tr><td>GitHub repository, documentation, and explanation</td><td>10</td></tr><tr><th>Total</th><th>50</th></tr></tbody></table></section>
+<section><h2>Discussion: Procedural vs. Object-Oriented Programming</h2><span class="pill">50 points · Weeks 1–2</span><p><strong>Topic: Why Does Object-Oriented Programming Matter?</strong></p><p>Programming languages use different approaches to organizing instructions and data. Two common approaches are procedural programming and object-oriented programming. Java is primarily object-oriented, allowing developers to organize applications around classes and objects.</p><h3>Initial Post (at least 250 words)</h3><p>Address all five prompts:</p><ol><li>What is the difference between procedural programming and object-oriented programming?</li><li>What advantages do classes and objects provide when developing larger applications?</li><li>Explain encapsulation, inheritance, and polymorphism using real-world examples.</li><li>Is object-oriented programming always the best approach? Why or why not?</li><li>Describe a real-world application that would benefit from object-oriented programming.</li></ol><h3>Peer Responses</h3><p>Respond to <strong>at least two classmates</strong>, with <strong>at least 100 words per response</strong>. Extend the conversation with meaningful feedback, a thoughtful question, or another example. Simple responses such as “I agree” or “Great post” will not earn full credit.</p><h3>Discussion Rubric</h3><table><thead><tr><th>Criterion</th><th>Points</th></tr></thead><tbody><tr><td>Initial post: completeness and accuracy</td><td>20</td></tr><tr><td>Application of concepts and examples</td><td>10</td></tr><tr><td>First substantive peer response</td><td>10</td></tr><tr><td>Second substantive peer response</td><td>10</td></tr><tr><th>Total</th><th>50</th></tr></tbody></table></section>
+<section><h2>Two-Week Learning Schedule</h2><div class="card"><h3>Week 1 — Java Foundations (Days 1–7)</h3><ul><li>Review the Module 1 lecture.</li><li>Install Java, VS Code, and Git.</li><li>Watch the introductory Java and GitHub videos.</li><li>Complete the HelloWorld guided lab.</li><li>Create and push your first GitHub repository.</li><li>Complete and submit Assignment 1.</li><li>Publish your initial discussion post.</li></ul></div><div class="card"><h3>Week 2 — Object-Oriented Java (Days 8–14)</h3><ul><li>Review the lecture sections on object-oriented programming.</li><li>Practice classes, constructors, objects, and methods.</li><li>Explore graphical output using <code>JOptionPane</code>.</li><li>Complete and submit Assignment 2.</li><li>Push completed source code to GitHub.</li><li>Respond to two classmates.</li><li>Review Java concepts before beginning the next language.</li></ul></div></section>
+<section><h2>Recommended GitHub Repository Structure</h2><p>Keep the guided lab and both assignments in a single repository:</p><pre><code>CMPS360-Java-Module1/
+├── .gitignore
+├── README.md
+├── Lab/
+│   └── HelloWorld.java
+├── Assignment1/
+│   └── StudentGradeCalculator.java
+└── Assignment2/
+    ├── Product.java
+    └── InventoryApp.java</code></pre><div class="note"><strong>Submission reminder:</strong> Submit your GitHub repository URL and the required screenshots/reflections in the LMS. Ensure your instructor can access the repository; do not post passwords or access tokens.</div></section><footer class="footer">CMPS 360 · Survey of Programming Languages · Module 1 · Point Park University</footer></main></div></body></html>
